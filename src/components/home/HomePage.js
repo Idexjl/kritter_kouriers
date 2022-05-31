@@ -1,5 +1,15 @@
+import Welcome from "./Welcome";
+import SuccessfulTransports from "../common/successful/SuccessfulTransports";
+import UnreliableTransporters from "../common/unreliable/UnreliableTransporters";
+
 const HomePage = (props) => {
-  return <h1>Welcome to Kritter Kouriers</h1>;
+  return (
+    <>
+      <Welcome></Welcome>
+      <SuccessfulTransports total="10"></SuccessfulTransports>
+      <UnreliableTransporters></UnreliableTransporters>
+    </>
+  );
 };
 
 export default HomePage;
