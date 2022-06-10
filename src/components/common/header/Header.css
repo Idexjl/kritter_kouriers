@@ -1,0 +1,64 @@
+.main-header {
+  background-image: linear-gradient(to top left, #cca3ff, #621bf9);
+  color: white;
+  font-size: 1.2rem;
+  width: 100%;
+  height: 60px;
+  padding-left: 8px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.main-header a:hover {
+  color: chocolate;
+}
+
+.main-nav {
+  display: inline-block;
+  width: calc(100% - 220px);
+  text-align: center;
+  vertical-align: center;
+  height: 100%;
+}
+
+.main-nav__item {
+  display: inline-block;
+  padding: 8px 16px;
+  text-align: center;
+}
+
+.main-nav__item:hover {
+  cursor: grab;
+  color: chocolate;
+}
+
+.main-nav__items {
+  display: inline-block;
+  list-style-type: none;
+  margin: auto;
+}
+
+.app-badge {
+  display: inline-block;
+  text-align: right;
+  vertical-align: bottom;
+}
+
+.app-badge img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.app-badge img:hover {
+  cursor: grab;
+}
+
+.user-area {
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+  vertical-align: bottom;
+  height: 100%;
+}

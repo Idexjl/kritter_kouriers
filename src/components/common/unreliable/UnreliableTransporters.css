@@ -1,0 +1,43 @@
+.unreliable-section {
+  background: url("../../../../public/HomeBackground.jfif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  position: fixed;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.evidence-img:hover {
+  cursor: grab;
+}
+
+.evidence-img {
+  border: solid 1px chocolate;
+  border-radius: 10%;
+}
+
+.unreliable-grid__row > div {
+  border-bottom: solid 1px #cacaca;
+}
+
+.unreliable-grid__row:nth-child(even) {
+  background-color: white;
+}
+
+.unreliable-grid__row:nth-child(odd) {
+  background-color: #f8f8f8;
+}
+
+.unreliable-grid__row:last-child > div {
+  border-bottom: none;
+}
+
+.unreliable-grid__header > div {
+  font-weight: bold;
+  border-bottom: solid 2px chocolate;
+}
+
+.unreliable-grid__header > div {
+  font-weight: bold;
+}
