@@ -84,7 +84,7 @@ const UnreliableTransporters = () => {
                 <ImageList
                   sx={{ width: 450, height: 200 }}
                   variant="woven"
-                  cols={3}
+                  cols={2}
                   gap={5}
                 >
                   {item.pics.map((pic, idx) => (
