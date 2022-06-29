@@ -1,18 +1,23 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
-import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import store from "./redux/store";
-import { Provider } from "react-redux";
+import App from "./app/App";
+
+import "./index.css";
+
+console.log(`back end port`, process.env.REACT_APP_BACKEND_PORT);
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <Provider store={store}>
+  <>
     <React.StrictMode>
       <BrowserRouter>
         <App />
       </BrowserRouter>
     </React.StrictMode>
-  </Provider>
+  </>
 );
+
+if (process.env.NODE_ENV === "development" && module.hot) {
+  module.hot.accept("./app/App", root.render);
+}

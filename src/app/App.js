@@ -1,15 +1,15 @@
 import { Route, Routes } from "react-router-dom";
-import HomePage from "./components/home/HomePage";
-import AboutPage from "./components/about/AboutPage";
-import UnreliableTransporters from "./components/common/unreliable/UnreliableTransporters";
-import PageNotFound from "./components/PageNotFound";
-import Header from "./components/common/header/Header";
-import ComponentWrapper from "./components/componentWrapper/ComponentWrapper";
-import SuccessfulTransports from "./components/common/successful/SuccessfulTransports";
+import HomePage from "../components/home/HomePage";
+import AboutPage from "../components/about/AboutPage";
+import UnreliableTransporters from "../components/common/unreliable/UnreliableTransporters";
+import PageNotFound from "../components/PageNotFound";
+import Header from "../components/common/header/Header";
+import ComponentWrapper from "../components/componentWrapper/ComponentWrapper";
+import SuccessfulTransports from "../components/common/successful/SuccessfulTransports";
 
 import "./App.css";
 
-export default function App() {
+const App = () => {
   return (
     <>
       <Header />
@@ -63,4 +63,6 @@ export default function App() {
       </main>
     </>
   );
-}
+};
+
+export default App;
